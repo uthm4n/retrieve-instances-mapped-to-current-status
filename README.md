@@ -9,7 +9,6 @@ Retrieve a list of your instances mapped to their current status (Running, Stopp
 
 **Example Usage + Output:**
 
-![Pretty-Output.png](https://github.com/uthm4n/retrieve-instances-mapped-to-current-status/blob/main/Pretty-Output.png)
-
+![screenshot](https://github.com/uthm4n/retrieve-instances-mapped-to-current-status/blob/main/screenshot.png)
 
 **Note:** similar to [polling the health API](https://github.com/uthm4n/polling-health-api), you can wrap the code in a try-except block + take input for the appliance URL + API key (hardcoding these is never a good practice for security). You can also copy the polling logic from the repo linked ^
