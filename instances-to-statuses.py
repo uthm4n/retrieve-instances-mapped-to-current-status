@@ -9,5 +9,12 @@ headers = {
 }
 response = requests.get(url, headers=headers, verify=False)
 data = response.json()
+
+string = json.dumps(data)                                                                            
+total_running_instances = string.count("running")                                                         # add some logic to retrieve 'running' and 'stopped' instances. Note to self: think of a better way to do this
+total_stopped_instances = string.count("stopped")
+print(f"Total number of instances in a RUNNING state: {total_running_instances}")
+print(f"Total number of instances in a STOPPED state: {total_stopped_instances}\n\n")
+
 for h in data['instances']:
     print(f"INSTANCE: {h['hostName']}\n STATUS: {h['status'].upper()}\n")
