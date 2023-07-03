@@ -10,4 +10,4 @@ headers = {
 response = requests.get(url, headers=headers, verify=False)
 data = response.json()
 for h in data['instances']:
-    print(f"Instance: {h['hostName']}, Status: {h['status'].upper()}")
+    print(f"INSTANCE: {h['hostName']}\n STATUS: {h['status'].upper()}\n")
