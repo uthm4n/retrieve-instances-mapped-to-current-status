@@ -1,6 +1,8 @@
 import json 
 import requests
+import warnings 
 
+warnings.filterwarnings("ignore")
 url = "https://<YOUR-MORPHEUS-URL>/api/instances?max=25&offset=0&showDeleted=false&details=false"   # By default, this retrieves the first 25 instances. You can configure this by changing 'max=' to a valid integer within the limits defined in the API docs
 
 headers = {
